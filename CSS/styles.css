@@ -12,8 +12,9 @@ header {
 	position:fixed;
 	top:0;
 	z-index: 100;
-	background:url(../images/bgc-header.png);
-	background-repeat: no-repeat;
+	background:url(../images/pattern.png),#01983b;
+	/*background:url(../images/bgc-header.png);
+	background-repeat: no-repeat;*/
  	min-height: 88px;
  	width: 100%;
 }
@@ -98,7 +99,11 @@ a{
 .nav-list__item a:active:before{
 	width: 100%;  
 }
+.wraper{
+	display: flex;
+	flex-direction: column;
 
+}
 /* первый блок*/
 .conteiner1{
 	background-image:url(../images/container1.png);
@@ -249,9 +254,69 @@ a{
 	left: 95%;
 }
 /*тень*/
-.shadow1{
+.shadow{
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 }
 /*второй блок*/
+.conteiner2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background:url(../images/penopolistirol-left.png) 40% 40% no-repeat,url(../images/container2.png) no-repeat;
+	max-width: 1920px;
+	min-height: 500px;
+	background-size: cover;
+}
+
+.tytle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.title_icon{
+	font-family:'EropeExt', sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #2c2783;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.title_icon-gr{
+	color: #01983b;
+}
+.title_text{
+	font-family:'EropeExt', sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	font-size: 30px;
+	text-align: center;
+	color: #073d79;
+	padding-bottom: 20px;
+}
+.video{
+	display: flex;
+	justify-content: center;
+}
+.text{
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	color:#0a274d;
+	
+}
+.button-link{
+	display: flex;
+	justify-content: center;
+}
+.button-link a{
+	
+	background:url(../images/pattern.png),#01983b;
+	color: #fff;
+	padding: 10px 25px;
+	border-radius: 5px;
+}
