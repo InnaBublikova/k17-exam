@@ -253,31 +253,46 @@ a{
 .slick-next{
 	left: 95%;
 }
+
 /*тень*/
 .shadow{
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 }
+
 /*второй блок*/
 .conteiner2{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background:url(../images/penopolistirol-left.png) 40% 40% no-repeat,url(../images/container2.png) no-repeat;
+	background:url(../images/container2.png) no-repeat;
 	max-width: 1920px;
-	min-height: 500px;
-	background-size: cover;
+	min-height: 800px;
+	background-size: contain;
+	position: relative;
 }
-
+.penoblock{
+	background:url(../images/penopolistirol-left.png) no-repeat;
+	position: absolute;
+	top: 200px;
+	left:0;
+	width: 520px;
+	height: 300px;
+	background-size: contain;
+	
+}
+.up{
+	z-index: 1;
+}
 .tytle {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top:30px;
 }
 .title_icon{
 	font-family:'EropeExt', sans-serif;
-	font-weight: normal;
     font-style: normal;
 	font-size: 40px;
 	font-weight: bold;
@@ -306,17 +321,29 @@ a{
 	display: flex;
 	justify-content: center;
 	font-size: 14px;
-	color:#0a274d;
-	
+	color:#0a274d;	
 }
 .button-link{
 	display: flex;
 	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 .button-link a{
-	
 	background:url(../images/pattern.png),#01983b;
+	font-family:'EropeExt', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
 	color: #fff;
+	text-align: center;
 	padding: 10px 25px;
 	border-radius: 5px;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+}
+.button-link a:hover{
+	opacity: 0.8;
+}
+	
+.button-link a:active{
+	background:url(../images/pattern.png),#055c26;
 }
