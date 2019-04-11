@@ -13,8 +13,6 @@ header {
 	top:0;
 	z-index: 100;
 	background:url(../images/pattern.png),#01983b;
-	/*background:url(../images/bgc-header.png);
-	background-repeat: no-repeat;*/
  	min-height: 88px;
  	width: 100%;
 }
@@ -78,13 +76,17 @@ a{
     transition: width .3s ease-in-out;
   }
 .nav-list__item a:hover{
-	-webkit-animation: pulsate 2.4s linear infinite; 
-	animation: pulsate 2.4s linear infinite;
+	/*-webkit-animation: pulsate 2.4s linear infinite; 
+	animation: pulsate 2.4s linear infinite;*/
 	text-align:center; 
-	text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 10px #fff, 0 0 12px #ff0000, 0 0 14px #ff0000, 0 0 16px #ff0000, 0 0 20px #ff0000; 
+	/*color:#626265;
+	/*text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 10px #fff, 0 0 12px #ff0000, 0 0 14px #ff0000, 0 0 16px #ff0000, 0 0 20px #ff0000; 
 	color:#fff;}
 	@-webkit-keyframes pulsate{
-	 5% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+	 5% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }*/
+}
+.nav-list__item a:active{
+	color:#626265;
 }
 
 .nav-list__item a:hover:after{
@@ -94,10 +96,12 @@ a{
 	width: 100%;  
 }
 .nav-list__item a:active:after{
-	width: 100%; 
+	width: 100%;
+	border-bottom: 2px solid #626265; 
 }
 .nav-list__item a:active:before{
-	width: 100%;  
+	width: 100%; 
+	border-top:2px solid #626265; 
 }
 .wraper{
 	display: flex;
@@ -348,3 +352,19 @@ a{
 	background:url(../images/pattern.png),#055c26;
 }
 /*третий блок*/
+.container3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background:url(../images/container3.png) no-repeat;
+	max-width: 1920px;
+	min-height: 1000px;
+	background-size: cover;
+}
+.tytle3{
+	font-family:'EropeExt', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #073d79;
+	text-align: center;
+}
