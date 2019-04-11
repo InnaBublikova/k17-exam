@@ -356,10 +356,17 @@ a{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background:url(../images/container3.png) no-repeat;
+	background:url(../images/container3.png)  no-repeat;
+	background-position: top -20px left 0;
 	max-width: 1920px;
 	min-height: 1000px;
 	background-size: cover;
+	position: relative;
+}
+.container31{
+	position: absolute;
+	bottom:  -20px;
+	right: 378px;
 }
 .tytle3{
 	font-family:'EropeExt', sans-serif;
