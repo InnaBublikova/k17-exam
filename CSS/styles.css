@@ -41,9 +41,7 @@ section{
 	flex-direction: column;
 	align-items: center;
 	max-width: 1920px;
-
 }
-
 
 .empty{
 	min-height: 90px;
@@ -138,8 +136,7 @@ section{
 	max-height: 720px;
 	box-sizing: content-box;
 	margin-right: auto;
-	margin-left: auto;
-	
+	margin-left: auto;	
 
 }
 .logo{
@@ -151,8 +148,6 @@ section{
 	margin:0;
 		
 }
-
-
 .contact{
 	font-weight: bold;
 	display: flex;
@@ -380,8 +375,6 @@ section{
 	background-image: url(../images/container3.png), url(../images/container32.png);
 	background-position: 710px top, -50px bottom;
 	background-repeat: no-repeat;
-	/*-webkit-background-size: 50%, content;
-	background-size: 50% , content;*/
 }
 .container3:before{
 	content: "";
