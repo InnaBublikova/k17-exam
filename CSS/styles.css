@@ -735,8 +735,8 @@ section{
 }
 .blockbottom-item_romb{
 	position: relative;
-	background-image: url(../images/romb.png);
-	background-repeat:  no-repeat;
+	background-image: url(../images/Romb.png);
+	background-repeat: no-repeat;
 	min-height: 194px;
 	min-width: 194px;
 }
