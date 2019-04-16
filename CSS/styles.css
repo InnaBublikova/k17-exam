@@ -1063,7 +1063,6 @@ footer{
 }
 
 .footer-text_icon-f img:hover{
-	/*border:2px solid #ccc;*/
 	-webkit-animation: pulsate 2.4s linear infinite; 
 	animation: pulsate 2.4s linear infinite; 
 	box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #ccc, 0 0 16px #ccc, 0 0 20px #ccc; 
@@ -1072,7 +1071,6 @@ footer{
 
 }
 .footer-text_icon-f img:active{
-	/*border:2px solid #ccc;*/
 	box-shadow: 0 0 3px #ccc, 0 0 6px #ccc, 0 0 9px #ccc, 0 0 10px #ccc, 0 0 12px #fff, 0 0 14px #fff, 0 0 16px #fff, 0 0 20px #fff; 
 	color:#fff;
 }
