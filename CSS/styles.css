@@ -1,17 +1,12 @@
 
-body{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
+.body{
 	padding: 0;
 	margin:0;
-	outline: none;
 	background-color: #fff;
-	font-family: 'Arial', sans-serif; 		
-	overflow-x:hidden;
+	font-family:Arial, sans-serif; 		
+	
 }
-header {
+.header {
 	position:fixed;
 	top:0;
 	z-index: 100;
@@ -19,7 +14,7 @@ header {
  	height: 88px;
  	width: 100%;
 }
-nav{
+.nav{
 	max-width: 980px;
 	margin-right: auto;
 	margin-left: auto;
@@ -29,7 +24,7 @@ a{
 	text-decoration: none;
 
 }
-section{
+.section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,6 +36,8 @@ section{
 	flex-direction: column;
 	align-items: center;
 	max-width: 1920px;
+	overflow-x:hidden;
+	outline: none;
 }
 
 .empty{
@@ -60,8 +57,9 @@ section{
 .nav-list__item {
 	user-select: none;
 }
-.nav-list__item a{
+.nav-list__link{
 	display: inline-block;
+	vertical-align: middle;
 	color:#fff;
 	font-size: 16px;
 	text-decoration: none;
@@ -78,7 +76,7 @@ section{
     display: block;
     box-sizing: border-box;
     content: "";
-    width: 0%;
+    width: 0;
     -webkit-transition: width .3s ease-in-out;
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
@@ -88,7 +86,7 @@ section{
     display: block;
     box-sizing: border-box;
     content: "";
-    width: 0%;
+    width: 0;
     -webkit-transition: width .3s ease-in-out;
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
@@ -96,29 +94,28 @@ section{
 .nav-list__item a:hover{
 	text-align:center; 
 }
-.nav-list__item a:active{
+.nav-list__link:active{
 	color:#626265;
 }
-
+.nav-list_item a .is-active:after,
 .nav-list__item a:hover:after{
 	width: 100%;
 }
+.nav-list_item a .is-active:before,
 .nav-list__item a:hover:before{
 	width: 100%;  
 }
 .nav-list__item a:active:after{
-	width: 100%;
-	border-bottom: 2px solid #626265; 
+	border-color: #626265; 
 }
 .nav-list__item a:active:before{
-	width: 100%; 
-	border-top:2px solid #626265; 
+	border-color: #626265; 
 }
 
 
 /* первый блок*/
 .conteiner1{
-	background-image:url(../images/container1.png);
+	background-image:url(../images/container-1.jpg);
 	background-size: cover;
 	min-height: 720px;
 
@@ -183,9 +180,7 @@ section{
 }
 
 .contact-input_search {
-	border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
+	border: none;
 	border-bottom: 1px solid #bfbdd9;
 	width: 320px;
 }
@@ -283,7 +278,7 @@ section{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background:url(../images/container2.png) no-repeat;
+	background:url(../images/container-2.jpg) no-repeat;
 	max-width: 1920px;
 	max-height: 797px;
 	background-size: contain;
@@ -329,19 +324,17 @@ section{
 	justify-content: center;
 }
 .text{
-	display: flex;
-	justify-content: center;
+	max-width: 980px;
+	font-family: monospace;
+	text-align: center;
 	font-size: 14px;
 	color:#0a274d;	
 }
-.text pre{
-	margin-top: 0;
-	margin-bottom: 0;
-}
+
 .button-link{
 	display: flex;
 	justify-content: center;
-	margin-top: 15px;
+	margin-top: 40px;
 	margin-bottom: 10px;
 
 }
@@ -373,7 +366,7 @@ section{
 	width: 100%;
 	height: auto;
 	position: relative;
-	background-image: url(../images/container3.png);
+	background-image: url(../images/container-3.jpg);
 	-webkit-background-size:contain ;
 	background-size:contain ;
 	background-repeat: no-repeat;
@@ -406,7 +399,7 @@ section{
 	width: 610px;
 	height: 310px;
 	box-sizing: border-box;
-	background-image: url(../images/Stock-right.png);
+	background-image: url(../images/Stock-right.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -417,7 +410,7 @@ section{
 	width: 610px;
 	height: 310px;
 	box-sizing: border-box;
-	background-image: url(../images/Stock-left.png);
+	background-image: url(../images/Stock-left.jpg);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
@@ -507,8 +500,11 @@ section{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	padding: 3px 45px;
+	padding: 4px 45px;
 }	
+.blocktop-item-black-bottom-rimg img{
+	display: block;
+}
 .tablegreenleft td:nth-child(1){
 	background-color:#01983b;
 	white-space: nowrap;
@@ -557,7 +553,10 @@ section{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding: 3px 45px;
+	padding: 4px 45px;
+}
+.blocktop-item-black-bottom-limg img{
+	display: block;
 }
 /*робы*/
 .blockbottom{
@@ -659,7 +658,7 @@ section{
 	width: 100%;
 	height:500px;
 	top:235px;
-	background-image: url(../images/Container444.png);
+	background-image: url(../images/Container-4.jpg);
 	background-repeat: no-repeat;
 
 }
@@ -668,19 +667,17 @@ section{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background-color: #fff;
-	opacity: 0.5;
+	background-color:rgba(255,255,255,0.6);
 	border: 4px solid #d5dfec;
 	border-radius: 4px;
 	min-height: 800px;
 	min-width: 1225px;
-	
+	position: relative;
 }
 .up4{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	position: absolute;
 	top:0;
 	z-index: 2;
 }
@@ -853,24 +850,21 @@ section{
 }
 /*седьмой блок*/
 .block7{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
 	width: 100%;
-	min-height: 502px;
 }
 .contacts{
-	position: absolute;
-	top:0;
+	position: relative;
 	z-index: 2;
-	min-width: 1225px;
+	max-width: 1225px;
 	min-height: 204px;
 	background:url(../images/pattern.png),#01983b;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	box-shadow: 4px 4px 6px -3px #ccc, -4px 4px 6px -3px #ccc;
 	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -40px;
 }
 .contacts-toptext{
 	display: flex;
@@ -894,7 +888,7 @@ section{
 	color: #fff;
 }
 .contacts-text a:hover{
-	color: #9ca09e;
+	text-decoration: underline;
 }
 .contacts-text a:active{
 	color: #9ca09e;
@@ -905,10 +899,11 @@ section{
 }
 
 .map iframe{
-	position: absolute;
+	display: block;
+	/*position: absolute;
 	top:164px;
-	left:0;
-	max-width:100%;
+	left:0;*/
+	max-width:1920px;
 	max-height:335px;
 }
 /*подвал*/
@@ -993,7 +988,7 @@ footer{
 	color:#fff;
 }
 .footer-text_link a:hover{
-	color:#9ca09e;
+	text-decoration: underline;
 }	
 
 .footer-text_link a:active{
